@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> CRUD</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #f2f2f6;
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+  } 
+  .form-wrapper button:hover {
+    background-color: #3a5ce0;
+  }
+
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 18px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+    text-align: left;
+  }
+
+  .card span {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 6px;
+  }
+
+  .card-title {
+    font-size: 19px;
+    font-weight: 700;
+    margin: 6px 0;
+    text-transform: capitalize;
+  }
+
+  .card-text {
+    color: #555;
+    line-height: 1.7;
+    margin: 6px 0;
+  }
+
+  .card > p {
+    color: #999;
+    font-size: 13px;
+    margin-top: 8px;
+  }
+
+  .card-actions {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .card-actions button {
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+
+  .edit-btn {
+    background-color: #ffc107;
+    color: #333;
+  }
+
+  .edit-btn:hover {
+    background-color: #e0a800;
+  }
+
+  .delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+  }
+
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+</style>
+</head>
+<body>
+
+<h1>My Posts</h1>
+
+<div class="form-wrapper">
+  <form id="post-form">
+    <input type="text" id="title-input" placeholder="Post title" required>
+    <textarea id="body-input" placeholder="Post body" required></textarea>
+    <button type="submit" id="submit-btn">Add Post</button>
+  </form>
+</div>
+
+<div class="posts"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
