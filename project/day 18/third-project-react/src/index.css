@@ -1,0 +1,9 @@
+body {
+  background-color: rgba(31, 8, 73, 0.438);
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+main {
+  min-height: 8vh;
+  padding: 20px 0;
+}

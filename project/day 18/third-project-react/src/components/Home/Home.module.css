@@ -1,0 +1,10 @@
+.hero {
+  background-color: #f4f1ea;
+  border-radius: 39px;
+}
+
+.hero p {
+  color: blueviolet;
+  max-width: 600px;
+  margin: 11px auto;
+}
